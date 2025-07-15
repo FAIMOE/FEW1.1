@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>universal selector font size</title>
+    <style>
+        * {
+            font-size: 16px;
+        }
+        .container p { 
+            color: red;
+        }
+        .container > p {
+            font-weight: bold;
+        }
+        .container > p + p {
+            font-style: italic;
+        }
+        a[href="https://example.com"] {
+         color: blue;
+         text-decoration: underline;
+        }
+        img[alt="A Cats"] {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+        input[type="text"] {
+            border: 1px solid gray;
+        }
+        a[href*="example"] {
+            color: green;
+        }
+        img[alt^="A"] {
+            box-shadow: 2px 2px 5px gray;
+        }
+        input[placeholder$="name"] {
+            font-style: italic;
+        }
+        button:hover{
+            background-color: blue;
+            color: white;
+        }
+        button:active{
+            background-color: red;
+            color: white;
+        }
+        input:focus {
+            border: 2px solid blue;
+        }
+        p::before {
+            content: "Before The Text";
+            font-weight: bold
+        }
+        P::after {
+            content: "After The Text";
+            font-style: italic;
+        }
+        ul li:first-child {
+            font-weight: bold;
+        }
+        ul li:last-child {
+            color: red;
+        }
+        h2:first-of-type {
+            color: blue;
+        }
+        ul li:nth-child(2n) {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>your name.</h1>
+    <h2>I dont know</h2>
+    <h3>kids today</h3>
+    <h4>hello</h4>
+    <h5>bye bye</h5>
+    <h6>alright</h6>
+    <div class="container">
+        <p>1</p>
+        <p>Some Italic Worlds</p>
+        <div>
+            <p>3</p>
+            <p>Some Italic Worlds</p>
+        </div>
+    </div>
+    <a href="https://example.com">Click Me !</a>
+    <br>
+    <img src="https://cute4kind.org/wp-content/uploads/2017/04/THE-CAT-WATCHING-HORROR-MOVIE-TOGEPI-Cute4Kind.jpg" alt="A Cats">
+    <br>
+    <a href="https://images.squarespace-cdn.com/content/v1/607f89e638219e13eee71b1e/1684821560422-SD5V37BAG28BURTLIXUQ/michael-sum-LEpfefQf4rU-unsplash.jpg?format=2500w">Cats</a>
+    <br>
+    <img src="" alt="">
+    <br>
+    <input type="text" placeholder="Enter your name">
+    <br />
+    <button>submit</button>
+    <br>
+    <input type="text" placeholder="name">
+    <br>
+    <p>Before The Text</p>
+    <br>
+    <p>After The Text</p>
+    <br>
+    <ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Forth Item</li>
+    </ul>
+</body>
+</html>

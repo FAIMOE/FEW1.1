@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Introduce</title>
+    <style>
+        .container div{
+            width: 200px;
+            height: 100px;
+            text-align: center;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center ;
+            height: 300px;
+        }
+        .red{
+            background-color: red;
+            height: 180px !important;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+            height: 80px !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="red">
+        <h2>1</h2>
+        </div>
+    <div class="green">
+        <h2>2</h2>
+    </div>
+    <div class="blue">
+        <h2>3</h2>
+    </div>
+    </div>
+    <div class="container">
+        <div class="red">
+        <h2>1</h2>
+        </div>
+    <div class="green">
+        <h2>2</h2>
+    </div>
+    <div class="blue">
+        <h2>3</h2>
+    </div>
+    </div>
+    <div class="container">
+        <div class="red">
+        <h2>1</h2>
+        </div>
+    <div class="green">
+        <h2>2</h2>
+    </div>
+    <div class="blue">
+        <h2>3</h2>
+    </div>
+    </div>
+</body>
+</html>
+        .border{
+            display: flex;
+            justify-content: space-around;
+        }
+        .picture2{
+            box-sizing: 150px;
+            box-shadow: 1px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: aliceblue;
+            padding: 20px;
+            border: 10px;
+            border-radius: 1px solid black;
+            margin: 10px;
+        }   

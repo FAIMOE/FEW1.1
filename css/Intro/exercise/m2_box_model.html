@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demonstration</title>
+        <style>
+    .content-box {
+        box-sizing: content-box; /* Element Width = Content + Padding + Border */
+        width: 300px;
+        height: 200px;
+        background-color: lightblue;
+        padding: 20px;
+        border: 5px solid black;
+        margin: 15px;
+     }
+    .border-box {
+        box-sizing: border-box; /*Element Width = Declared Width */
+        width: 300px;   /* Width will auto resize to fit the remaining space allowed after padding and border. */
+        height: 200px; /* Content Width = Width - Padding - Border */
+        background-color: #add86e;
+        padding: 10px;
+        border: 5px solid black;
+        margin: 15px;
+    }
+ </style>
+</head>
+<body>
+
+<body>
+    <div class="content-box">
+        <h3>content Box</h2>
+    </div>
+        <div class="border-box">
+        <h3>border-box</h2>
+    </div>
+</body>
+</html>

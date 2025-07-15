@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Layout (medium-layout.html)</title>
+<style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+
+      height: 80px;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content{
+      flex: 1;
+      display: flex;
+    }
+
+    sidebar {
+      width: 200px;
+      background: #ddd;
+      padding: 20px;
+      box-sizing: 100px;
+    }
+
+    main {
+      flex: 1;
+      padding: 20px;
+      box-sizing: 100px;
+    }
+
+     .footer {
+      height: 60px;
+      background: #f0f0f0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Application Layout</h1>
+  </header>
+
+  <div class="content ">
+    <sidebar>
+      <h2>Sidebar</h2>  
+      <p>Dashboard</p>
+      <p>Projects</p>
+      <p>Tasks</p>
+      <p>Calendar</p>
+      <p>Reports</p>
+      <p>Setting</p>
+    </sidebar>
+
+    <main>
+      <h2>Main Content Area</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate id beatae fugit nostrum nihil deleniti molestiae fugiat delectus ut sed.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio est eos autem ea, sit quis nobis pariatur quibusdam eligendi, veritatis incidunt accusantium, adipisci id sint dolore! Odio, provident doloremque?</p>
+    </main>
+  </div>
+
+   <div class="footer">
+    <p> &copy Application Layout. All rights reserved.</p>
+  </div>
+  </body>
+</html>

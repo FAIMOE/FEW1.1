@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My card</title>
+     <style>
+        .container-box{
+            box-shadow:black;
+            box-sizing: 300px;
+            width: 300px;
+            min-height: 200px;
+            background-color: yellow;
+            padding: 10px;
+            border: 1px solid lightgrey;
+            border-radius: 8px;
+            margin: 15px;
+        }
+         body{
+            display: flex;
+            align-items:center ;
+            justify-content: center;
+        }
+         img{
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+        </style>
+</head>
+<body>
+    <div class="container-box">
+        <div>
+            <img src="data:image/jpeg;base64,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">
+            <h1>This is MP5</h1>
+            <h3>The MP5 is a submachine gun developed by Heckler & Koch in the 1960s. It's known for its reliability and precision, and has been widely adopted by military and police forces worldwide. The MP5 is a versatile firearm, available in numerous variants including suppressed versions (MP5SD) and compact models (MP5K). </h3>
+            <button>learn more</button>
+    </div>     
+</body>
+</html>

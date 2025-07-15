@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS Selectors</title>
+
+    <style>
+      p {
+        font-size: 50px;
+      }
+      .highlight {
+        background-color: yellow;
+        font-weight: bold;
+      }
+      #special {
+        color: red;
+        text-decoration: underline;
+      }
+      .container p {
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="highlight">Using Internal CSS</h1>
+
+    <p>This paragraph uses only the element selector (50px font size).</p>
+
+    <p class="highlight">This paragraph has the highlight class.</p>
+
+    <p id="special">This paragraph has the special ID.</p>
+
+    <div class="container">
+      <p>
+        This paragraph is inside a container class and has a light blue
+        background.
+      </p>
+    </div>
+  </body>
+</html>

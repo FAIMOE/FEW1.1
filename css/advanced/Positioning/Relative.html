@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Positioning</title>
+    <style>
+         .box{
+            position: relative;
+            top: 50px;
+            background-color: #f2f2f2;
+            padding: 30px;
+            border: 1px solid #ccc;
+         }
+         .no-margin-box{
+            position: relative;
+            top: 60 px;
+            left: 80px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border: 1px solid #ccc;
+         }
+         .child-box{
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            background-color: #ddd;
+            padding: 20px;
+            border: 1px solid #999;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">This is parent box
+        <div class="child-box">
+            this is the child box with absolute positioning
+          </div>
+        <div class="child-box">
+            this is the child box with absolute positioning
+          </div>
+        <div class="child-box">
+            this is the child box with absolute positioning
+          </div>
+        </div>
+    </div>
+</body>
+</html>

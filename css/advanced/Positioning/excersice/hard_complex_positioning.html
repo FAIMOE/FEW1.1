@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Complex Positioning Layout</title>
+        <style>
+            body{
+                background-color: #ddd;
+            }
+            .fixed-header {
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                background-color: purple;
+                color: white;
+                width: 100%;
+                padding: 15px;
+            }
+            .fixed-header ul{
+                display: flex;
+                position: absolute;
+                right: 10px;
+                top: 0px; 
+            }
+            .fixed-header li{
+                list-style-type: none;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .fixed-header li a{
+                color: white;
+                text-decoration: none;
+            }
+            .page-container{
+                position: relative;
+                top: 50px;
+                left: 10px;
+                display: flex;
+            }
+            .sticky-sidebar li  {
+                list-style-type: none;
+            }
+            .sticky-sidebar li a{
+                color: black;
+                text-decoration: none;
+            }
+            .sticky-sidebar ul {
+                padding-left: 0px;
+            }
+            .sticky-sidebar{
+
+                background-color: white;
+                width: 200px;
+                padding: 20px;
+                height: 200px;
+            }
+            hr{
+                border: 1px solid black;
+            }
+            .content{
+                position: relative;
+                top: 0px;
+                margin-left: 20px;
+                background-color: white;
+                width: 100%;
+                padding-left: 30px;
+            }
+            .overlapping-section{
+                position: relative;
+                background-color: grey;
+                width: 95%;
+                height: 450px;
+            }
+            .box{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                color: white;
+                font-size: 2rem;
+            }
+            .box1{
+                top: 60px;
+                left: 60px;
+                background-color: orange;
+                z-index: 1;
+            }
+            .box2{
+                top: 140px;
+                left: 140px;
+                background-color: red;
+                z-index: 2;
+            }
+            .box3{
+                top: 220px;
+                left: 220px;
+                background-color: blue;
+                z-index: 3;
+            }
+            .content p {
+                position: relative;
+                top: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="fixed-header">
+            <div class="logo">Site Logo</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="page-container">
+            <aside class="sticky-sidebar">
+                <h2>Sidebar</h2>
+                <hr>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </aside>
+
+            <main class="content">
+                <h1>Main Content</h1>
+
+                <div class="overlapping-section">
+                    <!-- Create overlapping elements with z-index -->
+                    <div class="box box1">Box 1</div>
+                    <div class="box box2">Box 2</div>
+                    <div class="box box3">Box 3</div>
+                </div>
+
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+                <p>This is additional content to create scrolling.</p>
+            </main>
+        </div>
+
+        <button class="floating-button">+</button>
+
+        <footer>
+            <p>Footer content</p>
+        </footer>
+    </body>
+</html>
